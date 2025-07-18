@@ -1,6 +1,6 @@
 .main-page {
   background-image: url("/img/burial.jpg");
-  background-position: contain;
+  background-position: cover;
   background-size: 800px;
   height: 100vh;
 }
@@ -10,6 +10,45 @@
   background-position: cover;
   background-size: 700px;
   height: 100vh;
+}
+
+.ds3-page {
+    background-image: url("/img/ds3-background.png");
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: 1540px;
+    height: 100vh;
+}
+
+.residency-page {
+      background-image: url("/img/skoropaskyi-img.jpg");
+      background-position: cover;
+      background-repeat: no-repeat;
+      background-size: 1310px;
+      height: 100vh;
+}
+
+.main-title,
+.bm-title {
+  display: inline-block;
+  font-family: "Germania One", sans-serif;
+  font-size: 35px;
+  
+  margin: 0;
+  margin-left: 50%;
+}
+
+.main-title-div,
+.bm-title-div {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  width: 100%;
+  background-color: rgb(255, 255, 255, 0.5);
+  padding: 10px;
+}
+
+.link {
+  color: white;
 }
 
 .list {
@@ -25,7 +64,7 @@
   align-items: center;
 
   width: 100%;
-  height: 100%;
+  height: 90%;
 }
 
 .main-list-div,
@@ -34,8 +73,8 @@
   align-items: center;
   justify-content: center;
 
-  width: 175px;
-  height: 175px;
+  width: 225px;
+  height: 225px;
   border-radius: 50%;
   background-color: rgb(0, 0, 0, 0.5);
 
@@ -50,7 +89,7 @@
 }
 
 .icon {
-  width: 150px;
+  width: 200px;
 
   /* transition: transform 330ms ease-in-out; */
 }
@@ -59,3 +98,32 @@
 .icon:focus {
   transform: scale(1.2);
 } */
+
+.ds3-character {
+  width: 535px;
+  margin-left: 825px;
+
+  transition: transform 330ms ease-in-out;
+}
+
+.ds3-character:hover,
+.ds3-character:focus {
+  transform: scale(1.1);
+}
+
+.ds3-div {
+  display: flex;
+}
+
+.residency-vusa {
+  margin-left: 600px;
+  margin-top: 290px;
+  width: 100px;
+
+  transition: transform 330ms ease-in-out;
+}
+
+.residency-vusa:hover,
+.residency-vusa:focus {
+  transform: scale(1.8);
+}
