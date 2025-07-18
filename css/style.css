@@ -1,7 +1,14 @@
-body {
+.main-page {
   background-image: url("/img/burial.jpg");
   background-position: contain;
   background-size: 800px;
+  height: 100vh;
+}
+
+.bm-page {
+  background-image: url("/img/abigor-bg.jpg");
+  background-position: cover;
+  background-size: 700px;
   height: 100vh;
 }
 
@@ -11,7 +18,8 @@ body {
   margin: 0;
 }
 
-.main-list {
+.main-list,
+.bm-list {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -20,7 +28,8 @@ body {
   height: 100%;
 }
 
-.main-list-div {
+.main-list-div,
+.bm-list-div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,17 +43,19 @@ body {
 }
 
 .main-list-div:hover,
-.main-list-div:focus {
+.main-list-div:focus,
+.bm-list-div:hover,
+.bm-list-div:focus {
   transform: scale(1.2);
 }
 
 .icon {
   width: 150px;
 
-  transition: transform 330ms ease-in-out;
+  /* transition: transform 330ms ease-in-out; */
 }
-
+/* 
 .icon:hover,
 .icon:focus {
   transform: scale(1.2);
-}
+} */
